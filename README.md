@@ -188,6 +188,8 @@ licensed as BSD or GPL, depending on the code pulled in during the build
 process. All GPL source code should be excluded unless the Kconfig
 option to include it is set.
 
+### Port added
+This is a seperate repository for the 4530s port.
 
 The Software Freedom Conservancy
 --------------------------------
