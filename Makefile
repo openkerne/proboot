@@ -162,8 +162,8 @@ $(xcompile): util/xcompile/xcompile
 ifeq ($(NOCOMPILE),1)
 # We also don't use .xcompile in the no-compile situations, so
 # provide some reasonable defaults.
-HOSTCC ?= $(if $(shell type gcc 2>/dev/null),gcc,cc)
-HOSTCXX ?= g++
+HOSTCC ?= $(if $(shell type gcc-14 2>/dev/null),gcc-14,cc)
+HOSTCXX ?= g++-14
 
 include $(TOPLEVEL)/Makefile.mk
 include $(TOPLEVEL)/payloads/Makefile.mk

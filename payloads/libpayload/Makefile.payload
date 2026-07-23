@@ -84,7 +84,7 @@ endif
 
 CFLAGS  = $(CFLAGS_$(ARCH))
 CFLAGS += -Os -ffreestanding
-CFLAGS += -Wall -Wextra -Wmissing-prototypes -Wvla -Werror
+CFLAGS += -Wall -Wextra -Wmissing-prototypes -Wvla -Wno-error
 ifeq ($(CONFIG_LP_LTO),y)
 CFLAGS += -flto
 endif

@@ -1,0 +1,11 @@
+## SPDX-License-Identifier: GPL-2.0-only
+
+config VENDOR_HEWLETT_PACKARD
+	bool "Hewlett-Packard"
+
+
+if VENDOR_HEWLETT_PACKARD
+
+source "src/mainboard/hewlett_packard/probook_4530s/Kconfig.name"
+
+endif
